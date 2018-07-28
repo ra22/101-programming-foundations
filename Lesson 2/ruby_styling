@@ -1,0 +1,6 @@
+1. Set text editor's tab function to 2 spaces.
+2. # is used to comment code
+3. Always use snake_case to formate a method, variable or file. Lowercase, spaces are underscores _ .
+4. Constants are always deonted with all uppercase letters. e.g. FOUR = 4
+5. When working with do... end, use {} when entire code expression fits ONE line.
+5. Always use CamelCase when naming classes. No spaces and capitalize every word.
