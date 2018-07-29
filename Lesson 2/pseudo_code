@@ -1,0 +1,66 @@
+1. a method that returns the sum of two integers
+
+Given two variables, each assigned a seperate integer.
+  
+Add the first integer with the second.
+Return the sum and assign to the variable sum.
+
+Print the value of sum.
+
+Formally ###
+
+START 
+
+SET first_integer
+SET second_integer
+SET sum = first_integer + second_integer
+
+PRINT sum
+
+END
+
+
+2. a method that takes an array of strings, and returns a string that is all those strings concatenated together
+
+Given an array of strings.
+Assign an empty string called all_strings
+
+Iterate through the array of strings.
+  Add each string of the array to the empty string all_strings
+  Iterate for the entire length of the array.
+
+Print all_strings
+
+Formally ###
+
+START
+
+SET string_array # array of all 
+SET all_strings # empty string
+SET iterator = 1
+
+WHILE iterator < length of string_array
+  SET all_strings = all_string + current value of string_array
+   iterator = iterator + 1
+
+PRINT all_strings
+
+END
+
+3. a method that takes an array of integers, and returns a new array with every other element
+
+Given an array of integers.
+Set an iterator at 0.
+
+Iterate through the array of integers.
+  IF the iterator is even (divisible by 2)
+    save integer in new_array
+  Incrememnt the iterator by 1
+  End when iterator is equal to the length of the integer array.
+
+Print new_array
+
+
+
+
+
