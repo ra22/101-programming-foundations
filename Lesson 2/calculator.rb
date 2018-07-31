@@ -3,8 +3,8 @@
 # perform the operation on the two numbers
 # output the result
 
-#answer = Kernel.gets()
-#Kernel.puts(answer)
+# answer = Kernel.gets()
+# Kernel.puts(answer)
 
 def prompt(message)
   Kernel.puts("=> #{message}")
@@ -43,12 +43,10 @@ end
 prompt("Hi #{name}")
 
 loop do # main loop
-
   number1 = ''
   loop do
     prompt("What's the first number?")
-    number1 = Kernel.gets().chomp() # .chomp used to get rid of /n (new line) character every string has.
-
+    number1 = Kernel.gets().chomp() # .chomp used to get rid of /n.
     if valid_number?(number1)
       break
     else
@@ -91,14 +89,15 @@ loop do # main loop
 
   prompt("#{operation_to_message(operator)} the two numbers...")
 
-  if operator == '1' # if condition isn't a block, don't have to initialize variable outside block, still accessible.
-    result = number1.to_i() + number2.to_i()
-  elsif  operator == '2'
-    result = number1.to_i() - number2.to_i()
-  elsif operator == '3'
-    result = number1.to_i() * number2.to_i()
-  else
-    result = number1.to_f() / number2.to_f()
+  result =  case operator
+            when '1'
+              number1.to_i() + number2.to_i()
+            when '2'
+              number1.to_i() - number2.to_i()
+            when '3'
+              number1.to_i() * number2.to_i()
+            when '4'
+              number1.to_f() / number2.to_f()
   end
 
   prompt("The result is #{result}")

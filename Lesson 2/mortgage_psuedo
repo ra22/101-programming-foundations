@@ -1,0 +1,36 @@
+The user gives three inputs
+  the loan_amount - verify integer or float and positive
+  the Annual Percentage Rate (APR) - verify integer or float and positive
+  the loan_duration - verify integer or float and positive
+
+Convert loan_duration into number_of_months (method)
+Convert APR to monthly interest rate (method)
+
+Calculate value monthly_payments using inputs and formula
+
+Print monthly_payments across loan_duration
+
+FORMALLY
+
+START
+
+GET loan_amount
+WHILE loan_amount not a valid number
+  PRINT 'Need a valid number'
+
+GET arp
+WHILE arp not a valid number
+  PRINT 'Need a valid number'
+
+GET loan_duration
+WHILE loan_duration not a valid number
+  PRINT 'Need a valid number'
+
+SET number_of_months from loan_duration
+SET monthy_interest_rate from arp
+
+SET monthly_payments using amortization formula
+
+PRINT monthly_payments through loan_duration
+
+END
